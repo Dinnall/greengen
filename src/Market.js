@@ -24,8 +24,6 @@ class Market extends Component {
   handleSelect = (e) => {
     const targetVal = e.target.value
 
-    console.log("TARGET", targetVal)
-
     if (targetVal === 'Richmond'){ 
       this.setState({
         selectedBorough: targetVal, 
@@ -79,22 +77,6 @@ class Market extends Component {
 
   render() {
     return (
-      <div >
-        
-        <div className='burger'>
-        <input type="checkbox" id="menu-toggle" />
-  
-          <ul className='nav'>
-
-           <div className='logo-div'> <li className='logo' >GreenGen</li> </div>
-          <div className="liContainer">
-          <li className='li'><Link id='link' to="/map">MAP</Link></li> 
-          {"  "}
-          <li className='li'><Link id='link' to="/about">ABOUT </Link></li>
-          </div>
-          </ul>
-        </div>
-
         <Switch>
           <Route exact path="/map" render={() => {
             return( <MapAndBoro mapOptions={this.state.mapOptions} 
