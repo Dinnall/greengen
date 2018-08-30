@@ -1,4 +1,3 @@
-## MLH MockUp
 
 ## [LIVE DEMO!!!](https://profile-mockup-mlh.herokuapp.com/index.html)
 
@@ -19,3 +18,4 @@ To run project:
 
 - Easy no crazy build 
 -Enjoy
+
