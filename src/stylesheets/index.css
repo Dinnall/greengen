@@ -1,0 +1,523 @@
+/*------------------------------------------*/
+/*                 Splash Page              */
+/*------------------------------------------*/
+.splash-container h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+// Pushes the page below the navigation bar, which has a height of 60px.
+*/
+.splash-container {
+    padding-top: 6px;
+}
+
+    /*
+    // Content above the fold
+    */
+    .splash-top {
+        height: 92.4vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*
+    // Image container 
+    */ 
+    .splash-top-image {
+        /* background-color: rgba(255, 0, 0, 0.4); */
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        /*
+        // Image 
+        */ 
+        .splash-top-image img{
+            width: 600px;
+            /* height: 400px; */
+            height: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.03);
+            -moz-transition: 0.3s all;
+            -webkit-transition: 0.3s all;
+            -o-transition: 0.3s all;
+            transition: 0.3s all;
+        }
+
+
+    /*
+    // Contains Elevate, slogan, and buttons
+    */ 
+    .splash-top-info {
+        width: 50%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 255, 0.2); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*
+    // Elevate logo and title container 
+    */
+    .splash-top-info-title {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 75px;
+        -moz-transition: 0.3s all;
+        -webkit-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        transition: 0.3s all;
+    }
+
+        /*
+        // Logo
+        */ 
+        .splash-top-info img {
+            width: 65px;
+            height: 65px;
+            padding-left: 12px;
+            -moz-transition: 0.3s all;
+            -webkit-transition: 0.3s all;
+            -o-transition: 0.3s all;
+            transition: 0.3s all;
+        }
+
+        /* 
+        // Elevate 
+        */ 
+        .splash-top h1 {
+            font-size: 6rem;
+            font-weight: 400;
+            padding: 12px; 
+            -moz-transition: 0.3s all;
+            -webkit-transition: 0.3s all;
+            -o-transition: 0.3s all;
+            transition: 0.3s all;
+        }
+
+    /*
+    // Elevate your job search experience  
+    */ 
+    .splash-top p {
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 12px 12px 24px 12px;
+        margin-left: 75px;
+        -moz-transition: 0.3s all;
+        -webkit-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        transition: 0.3s all;
+    }
+
+    /*
+    // Contains demo and sign up buttons 
+    */ 
+    .splash-top-button-container {
+        display: flex;
+        margin-left: 75px;
+        -moz-transition: 0.3s all;
+        -webkit-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        transition: 0.3s all;
+    }
+
+        /* Demo and create an account button */
+        .splash-top button {
+            outline: none;
+            border: none;
+            background: rgba(0, 149, 222, 1); 
+            color: #fefefe;
+            border-radius: 60px;
+            height: 60px;
+            width: 200px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 1.6rem;
+            margin: 12px;
+            -moz-transition: 0.2s all;
+            -o-transition: 0.2s all;
+            -webkit-transition: 0.2s all;
+            transition: 0.2s all;
+            cursor: pointer;
+        }
+
+        /* Button pseudo elements */
+
+        .splash-top button:focus,
+        .splash-top button:active {
+            outline: none;
+            border: none;
+        }
+
+        .splash-top button:hover,
+        .splash-top button.signup:hover,
+        .splash-top button.demo:hover {
+            transform: scale(1.02);
+        }
+
+
+@media screen and (max-width: 1300px) {
+    .splash-top-image {
+        width: 46%;
+    }
+
+    .splash-top-image img {
+        width: 90%;
+        height: auto;
+    }
+
+    .splash-top-info {
+        width: 54%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .splash-top-info-title {
+        margin-left: 0;
+    }
+
+    .splash-top p {
+        margin-left: 0;
+    }
+
+    .splash-top-button-container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .splash-top-info-title img {
+        height: 56px;
+        width: 56px;
+    }
+
+    .splash-top-info-title h1 {
+        font-size: 4rem;
+    }
+
+    .splash-top-info p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .splash-top {
+        flex-direction: column-reverse;
+    }
+
+    .splash-top-image {
+        width: 100%;
+        height: 40%;
+        display: none;
+    }
+
+        .splash-top-image img {
+            height: 90%;
+            width: auto;
+        }
+
+
+    .splash-top-info {
+        width: 100%;
+        /* height: 60%; */
+    }
+
+    .splash-top-info-title {
+        justify-content: center;
+    }
+
+    .splash-top-info p {
+        text-align: center;
+    }
+}
+
+/*------------------------------------------*/
+/*               Feature Title              */
+/*------------------------------------------*/
+
+.splash-feature-title {
+    font-weight: 300;
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    transition: 0.3s all;
+}
+
+
+/*------------------------------------------*/
+/*             Feature Cards                */
+/*------------------------------------------*/
+
+    /*
+    // Middle content, which holds a description of the app's features
+    */
+    .splash-features {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 160px;
+        height: 500px;
+        background-color: #f5f0f5;
+        transition: 0.3s all;
+    }
+
+        /*
+        // Individual feature card 
+        */
+        .splash-feature-card {
+            height: 280px;
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fefefe;
+            text-align: center;
+            padding: 12px;
+            border-radius: 4px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.03);
+            transition: 0.3s all;
+            animation: deanimate-on-hover .3s;
+            animation-fill-mode: forwards;
+        }
+
+            /*
+            // Feature card shifts up on hover
+            */
+            .splash-feature-card:hover {
+                animation: animate-on-hover .3s;
+                animation-fill-mode: forwards;
+            }
+
+        /*
+        // Holds the circular image on a feature card
+        */
+        .splash-feature-card div {
+            height: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .splash-features img {
+                height: 140px;
+                width: 140px;
+            }
+
+        .splash-feature-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.9);
+        }
+
+        .splash-feature-card p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+    /*
+    // Footer content
+    */
+    .splash-footer {
+        background-color: #243b54;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+    }
+
+        .splash-footer a,
+        .splash-footer a:visited,
+        .splash-footer a:active {
+            color: #fefefe;
+            text-decoration: none;
+        }
+
+
+/*
+// When screen is smaller than 1300px, 
+// side padding becomes responsive,
+// feature card width becomes responsive.
+*/
+@media screen and (max-width: 1300px) {
+    .splash-features {
+        padding: 0 3%;
+    }
+
+    .splash-feature-card {
+        width: 29%;
+    }
+}
+
+/*
+// When screen is smaller than 720px,
+// feature cards stack up vertically.
+*/
+@media screen and (max-width: 720px) {
+    .splash-features {
+        flex-direction: column;
+        align-items: center;
+        /* height: 1000px; */
+        height: 100%;
+        margin: 80px auto;
+    }
+
+    .splash-feature-card {
+        width: 80%;
+        margin-bottom: 12px;
+    }
+
+    .splash-feature-title {
+        margin-bottom: 32px;
+        font-size: 2.8rem;
+    }
+}
+
+/*
+// When screen is smaller than 510px,
+// buttons stack up vertically.
+*/
+@media screen and (max-width: 510px) {
+    .splash-top-button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .splash-feature-title {
+        font-size: 2.2rem;
+    }
+
+    .splash-feature-card {
+        width: 96%;
+    }
+}
+
+/*--------------------*/
+/*   ELEMENT : Link   */ 
+/*--------------------*/
+.Link {
+    text-decoration: none;
+    color: var(--black, black);
+    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    margin: 0.6rem;
+}
+
+
+/*--------------------*/
+/* ELEMENT :  NavBar  */ 
+/*--------------------*/
+.NavBar {
+    border-bottom: 1px solid var(--white, whitesmoke);
+    box-shadow: 0 0 24px var(--white, whitesmoke);
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavBar .logo {
+    width: 76px;
+    height: auto;
+}
+
+.NavBar .nav-links {
+    display: flex;
+}
+
+
+/*--------------------*/
+/*    PAGE : Home    */ 
+/*--------------------*/
+.Home main {
+    padding: 0 2.4rem;
+    margin: 2.4rem auto;
+    line-height: 1.6;
+}
+.Home main h1 {
+     padding-bottom: 16px; 
+}
+.Home main h1.fadein-2 {
+    animation: fadein 1.6s ease-in-out;
+}
+.Home main h1.fadein-3 {
+    animation: fadein 3s ease-in-out;
+}
+
+.fadein {
+    animation: fadein .3s ease-in;
+}
+
+
+/*--------------------*/
+/*    Market Map Info    */ 
+/*--------------------*/
+
+.market:hover{
+    cursor: pointer;
+    transform: scale(1.25);
+}
+#market-info {
+    position: absolute;
+    padding: 2px;
+    left: 1px;
+    top: 1px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid grey;
+    width: 231px;
+    height: 165px;
+    z-index: 99;
+    word-wrap: break-word;
+}
+#market-marker {
+    z-index: -1;
+}
+
+
+/*--------------------*/
+/*   Header for SNAP Page   */ 
+/*--------------------*/
+
+
+.main-header {
+    text-align: center;
+    padding: 1.2rem;
+    color: var(--black, black);
+}
+
+
+/*--------------------*/
+/*   SNAP Locations    */ 
+/*--------------------*/
+
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    min-height: 300px;;
+    height: 20%;
+}
+
