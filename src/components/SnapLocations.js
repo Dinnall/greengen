@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import './../stylesheets/index.css';
 
 class SnapLocations extends Component {
   constructor(props) {

@@ -7,8 +7,7 @@ import Map from './components/Map';
 import SnapLocations from './components/SnapLocations';
 import NavBar from './components/NavBar';
 import MapAndBoro from "./components/MapAndBoro.js";
-import './stylesheets/index.css';
-import './stylesheets/App.css';
+// import './stylesheets/index.css';
 
 
 class App extends Component {
@@ -27,9 +26,6 @@ class App extends Component {
 
   handleSelect = (e) => {
     const targetVal = e.target.value
-
-    console.log("TARGET", targetVal)
-
     if (targetVal === 'Richmond'){ 
       this.setState({
         selectedBorough: targetVal, 
@@ -79,9 +75,7 @@ class App extends Component {
         });
       });
   };
-
-
-  render() {
+render() {
     return (
       <div>
         <NavBar />

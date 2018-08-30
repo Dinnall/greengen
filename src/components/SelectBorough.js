@@ -1,6 +1,4 @@
 import React from "react";
-// import './../stylesheets/index.css';
-import './../stylesheets/App.css';
 
 class SelectBorough extends React.Component {
   constructor() {

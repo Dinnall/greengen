@@ -1,5 +1,4 @@
 import React from "react";
-import './../stylesheets/App.css';
 
 
 import appleImageM from "../images/green_apple_medium.png";

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../stylesheets/index.css';
 
 class Home extends Component {
   constructor() {
