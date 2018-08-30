@@ -3,7 +3,6 @@ import GoogleMapReact from "google-map-react";
 import axios from "axios";
 import './../stylesheets/index.css';
 
-
 import MarketMarkerGreen from "./MarketMakerGreen";
 import MarketMarkerRed from "./MarketMakerRed";
 import MarketInfo from "./MarketInfo";
