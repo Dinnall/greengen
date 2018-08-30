@@ -8,6 +8,7 @@ class MapAndBoro extends React.Component {
     this.state = {
       selectedMarket: null
     }
+  this.onMarketClick = this.onMarketClick.bind(this);
   }
 
   onMarketClick = market => {

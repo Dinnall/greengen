@@ -33,7 +33,8 @@ class SelectBorough extends React.Component {
       selectedBorough: "",
       markets: []
     };
-  }
+  this.getMarketDetail = this.getMarketDetail.bind(this);
+}
 
   getMarketDetail = () => {
     return this.props.markets.map(market => {

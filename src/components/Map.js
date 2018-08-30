@@ -38,9 +38,7 @@ class Map extends Component {
 
   componentDidMount() {
     axios
-      .get(
-        "https://data.ny.gov/resource/7jkw-gj56.json?county='Queens'  OR county='Kings' OR county='New York' OR county='Richmond' OR county='Bronx'"
-      )
+      .get("https://data.ny.gov/resource/7jkw-gj56.json?county='Queens'  OR county='Kings' OR county='New York' OR county='Richmond' OR county='Bronx'")
       .then(res => {
         this.setState({
           markets: res.data.filter(
@@ -52,12 +50,6 @@ class Map extends Component {
         console.log("error fetching markets");
       });
   }
-
-  onMapChange = options => {
-    this.setState({
-      mapOptions: options
-    });
-  };
 
   onMarketClick = i => {
     const markets = this.state.markets;
@@ -76,14 +68,12 @@ class Map extends Component {
     const { markets, selectedMarketIndex } = this.state;
     const {mapOptions} = this.props
     const { zoom } = mapOptions;
-    const imageGreen =
-      zoom >= 18 ? appleImageL : zoom >= 17 ? appleImageM : appleImageS;
-
-const imageRed = zoom >= 18 ? appleImageredL : zoom >= 17 ? appleImageredM: appleImageredS;
+    const imageGreen = zoom >= 18 ? appleImageL : zoom >= 17 ? appleImageM : appleImageS;
+    const imageRed = zoom >= 18 ? appleImageredL : zoom >= 17 ? appleImageredM: appleImageredS;
 
     return <GoogleMapReact id="map-container" bootstrapURLKeys={{ key: "AIzaSyCQTUR2rqPrkIsOIBh7G_KjKE74P4kcKX0" }} {...this.props.mapOptions}>
-        {markets.map((market, i) => (market.snap_status === "Y" ? <div lat={market.location_points.coordinates[1]} lng={market.location_points.coordinates[0]} style={{ width: 30, heigth: 30 }}>
-                <MarketMarkerGreen id="market-marker" market={market} imageGreen={imageGreen} selected={market[i] === selectedMarketIndex} onMarketClick={() => this.onMarketClick(i)} key={i} lat={market.location_points.coordinates[1]} lng={market.location_points.coordinates[0]} />
+                           {markets.map((market, i) => (market.snap_status === "Y" ? <div lat={market.location_points.coordinates[1]} lng={market.location_points.coordinates[0]} style={{ width: 30, heigth: 30 }}>
+          <MarketMarkerGreen id="market-marker" market={market} imageGreen={imageGreen} selected={market[i] === selectedMarketIndex} onMarketClick={() => this.onMarketClick(i)} key={i} lat={market.location_points.coordinates[1]} lng={market.location_points.coordinates[0]} />
                 {i === selectedMarketIndex && <div id="market-info">
                     {MarketInfo(markets[selectedMarketIndex])}
                   </div>}

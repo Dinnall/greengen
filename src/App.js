@@ -7,8 +7,6 @@ import Map from './components/Map';
 import SnapLocations from './components/SnapLocations';
 import NavBar from './components/NavBar';
 import MapAndBoro from "./components/MapAndBoro.js";
-// import './stylesheets/index.css';
-
 
 class App extends Component {
 
@@ -61,9 +59,6 @@ class App extends Component {
             zoom: 14
         }});
       } 
-
-    console.log("targetVal", targetVal);
-    console.log('hello')
     axios
       .get(
         `https://data.ny.gov/resource/7jkw-gj56.json?county=${e.target.value}&$order=market_name ASC`

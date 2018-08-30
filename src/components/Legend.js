@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import appleImageM from "../images/green_apple_medium.png";
 import appleImageredM from "../images/red_apple_medium.png";
 
