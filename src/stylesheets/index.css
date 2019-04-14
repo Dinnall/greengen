@@ -291,7 +291,7 @@
             transition: 0.3s all;
             animation: deanimate-on-hover .3s;
             animation-fill-mode: forwards;
-        }
+  }
 
             /*
             // Feature card shifts up on hover
