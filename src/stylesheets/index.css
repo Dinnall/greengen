@@ -264,7 +264,7 @@
     /*
     // Middle content, which holds a description of the app's features
     */
-    .splash-features {
+.splash-features {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -278,9 +278,7 @@
         /*
         // Individual feature card 
         */
-        .splash-feature-card {
-            height: 280px;
-            width: 280px;
+.splash-feature-card {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -292,7 +290,7 @@
             transition: 0.3s all;
             animation: deanimate-on-hover .3s;
             animation-fill-mode: forwards;
-        }
+  }
 
             /*
             // Feature card shifts up on hover
