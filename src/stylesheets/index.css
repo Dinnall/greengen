@@ -264,7 +264,7 @@
     /*
     // Middle content, which holds a description of the app's features
     */
-    .splash-features {
+.splash-features {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -278,8 +278,7 @@
         /*
         // Individual feature card 
         */
-        .splash-feature-card {
-            height: 280px;
+.splash-feature-card {
             width: 280px;
             display: flex;
             flex-direction: column;
